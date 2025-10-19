@@ -1,3 +1,26 @@
+# On-Chain Watch (INSIDER-MONITORING)
+
+React アプリでウォレットアドレスの ERC‑20 トークン移動を取得・表示します。指定したアドレスのアクティビティを時系列でウォッチできます。表示される情報は公開チェーン上のデータであり、特定の人物・組織の違法行為を断定・主張するものではありません。関連性の検証は利用者の責任で行ってください。
+
+環境変数（任意）
+- `REACT_APP_ETHERSCAN_KEY`: Etherscan API キー
+- `REACT_APP_COVALENT_KEY`: Covalent API キー（存在すれば優先）
+
+セットアップ
+- 依存インストール: `npm ci`
+- 起動: `npm start` → http://localhost:3000
+
+使い方
+- 追跡したいウォレットアドレスを追加（任意ラベル可）
+- 「最新のトランスファーを取得」で直近のトークン移動を一覧表示
+- 各行の Tx リンクからエクスプローラで詳細確認
+
+注意
+- 無効なアドレスや API キー未設定時はデータが表示されません。
+- CORS 制約で取得できない場合は Etherscan/Covalent のキーを設定してください。
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
